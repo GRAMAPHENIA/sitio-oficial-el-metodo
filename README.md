@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Método ADULMA
 
-First, run the development server:
+Bienvenido al repositorio del **Método ADULMA**: un sitio web enfocado en el bienestar, la salud y el aprendizaje. Este proyecto está desarrollado utilizando **Next.js**, **Shadcn**, y **TypeScript**, siguiendo las mejores prácticas de **clean code** y una arquitectura **modular**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Descripción
+
+El **Método ADULMA** tiene como objetivo proporcionar herramientas y recursos para mejorar el bienestar físico, mental y emocional, integrando conocimientos de salud y aprendizaje continuo. La plataforma ofrece una experiencia intuitiva y optimizada tanto para dispositivos móviles como de escritorio.
+
+## Características Principales
+
+- **Next.js**: Framework de React para desarrollo web que ofrece SSR (Server-Side Rendering) y SSG (Static Site Generation) para optimizar el rendimiento y la velocidad de carga.
+- **Shadcn**: Un sistema de componentes altamente personalizable que asegura consistencia en el diseño.
+- **TypeScript**: Lenguaje de programación con tipado estático que mejora la robustez y la mantenibilidad del código.
+- **Arquitectura modular**: Organización del código en módulos independientes, facilitando su escalabilidad y reutilización.
+- **Clean Code**: Código claro, organizado y fácil de mantener, siguiendo las mejores prácticas de desarrollo.
+- **SEO optimizado**: Implementaciones para mejorar la indexación y visibilidad en motores de búsqueda.
+- **Responsive Design**: Diseño adaptable a diferentes resoluciones de pantalla.
+- **Skeleton loading**: Mejora en la percepción de carga utilizando skeletons mientras se cargan los datos.
+
+## Estructura del Proyecto
+
+La estructura del código sigue un enfoque modular para facilitar la escalabilidad y mantenimiento. A continuación, se describe la organización de las principales carpetas:
+
+```
+/src
+  /components   # Componentes reutilizables
+  /pages        # Rutas y vistas del sitio
+  /data         # Arrays y datos estructurados
+  /types        # Definiciones de tipos en TypeScript
+  /styles       # Estilos globales y variables de tema
+  /utils        # Funciones utilitarias y helpers
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para correr el proyecto localmente, sigue estos pasos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/metodo-adulma.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd metodo-adulma
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El sitio estará disponible en `http://localhost:3000`.
