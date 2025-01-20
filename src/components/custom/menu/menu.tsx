@@ -19,9 +19,9 @@ import { SocialLinks } from "@/components/custom/social-link/SocialLinks";
 
 export function Menu() {
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="hidden md:flex justify-between items-center w-full px-4">
       {/* Menú principal */}
-      <NavigationMenu className="z-50">
+      <NavigationMenu className="z-50 mt-4">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Principal</NavigationMenuTrigger>
@@ -65,7 +65,11 @@ export function Menu() {
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {menu.map((item) => (
-                  <ListItem key={item.title} title={item.title} href={item.href}>
+                  <ListItem
+                    key={item.title}
+                    title={item.title}
+                    href={item.href}
+                  >
                     {item.description}
                   </ListItem>
                 ))}

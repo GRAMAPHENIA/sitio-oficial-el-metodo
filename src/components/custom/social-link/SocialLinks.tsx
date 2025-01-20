@@ -20,7 +20,7 @@ export function SocialLinks() {
             alt={social.label}
             width={40}
             height={40}
-            className="opacity-50 hover:opacity-70 border hover:shadow p-2 rounded-lg"
+            className="opacity-50 hover:opacity-70 hover:bg-orange-400/40 p-2 rounded-lg"
           />
         </Link>
       ))}

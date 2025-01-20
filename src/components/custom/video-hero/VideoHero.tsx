@@ -13,7 +13,7 @@ const VideoHero: React.FC = () => {
     <section
       role="region"
       aria-labelledby="video-hero-heading"
-      className="relative max-w-7xl h-[500px] lg:h-[350px] overflow-hidden shadow-xl rounded-xl mt-5 mx-4 lg:mx-auto"
+      className="relative max-w-7xl h-[300px] lg:h-[350px] overflow-hidden shadow-xl rounded-xl mt-5 mx-4 md:mx-0"
     >
       {/* Video de fondo */}
       <video
@@ -33,7 +33,7 @@ const VideoHero: React.FC = () => {
         >
           &quot;El Método&quot;
         </h1>
-        <p className="text-amber-50/90 text-lg md:text-xl lg:text-2xl mt-4 px-40">
+        <p className="text-amber-50/90 text-lg md:text-xl lg:text-2xl mt-4 px-10 lg:px-40">
           Para profesionales interesados en enseñarlo y{" "}
           <span className="font-semibold text-white">Adul</span>tos{" "}
           <span className="font-semibold text-white">Ma</span>yores que quieran
