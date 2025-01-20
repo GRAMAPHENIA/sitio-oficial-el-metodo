@@ -1,3 +1,4 @@
+import { CardMision } from "@/components/custom/card-mision/CardMision";
 import { Menu } from "@/components/custom/menu/menu";
 import VideoHero from "@/components/custom/video-hero/VideoHero";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-2  items-center sm:items-start">
         <Menu />
         <VideoHero/>
+        <CardMision />
       </main>
     </div>
   );
