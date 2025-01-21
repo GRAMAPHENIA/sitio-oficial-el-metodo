@@ -31,6 +31,7 @@ const VideoHero: React.FC = () => {
         loop
         playsInline
         aria-hidden="true"
+        tabIndex={-1} // Para evitar que el video sea accesible
       />
       {/* Contenido superpuesto */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center backdrop-blur-[4px] bg-black/40">
