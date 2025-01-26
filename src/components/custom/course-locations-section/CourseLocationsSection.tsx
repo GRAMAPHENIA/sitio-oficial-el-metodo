@@ -32,7 +32,7 @@ const courseLocations: CourseLocation[] = [
   {
     name: "Olivos - Salón al fondo",
     address: "Ricardo Gutiérrez 1372, Olivos",
-    description: "Lunes y jueves, de 11:10 a 12:10 hrs. Salón al fondo.",
+    description: "Lunes y jueves, de 11:10 a 12:10 hrs.",
     instructor: "Ana Martínez",
   },
   {
