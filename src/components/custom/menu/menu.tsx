@@ -19,12 +19,14 @@ import { SocialLinks } from "@/components/custom/social-link/SocialLinks";
 
 export function Menu() {
   return (
-    <div className="hidden md:flex justify-between items-center w-full px-4">
+    <div className="hidden md:flex justify-between items-center w-full mt-4">
       {/* Menú principal */}
-      <NavigationMenu className="z-50 mt-4">
+      <NavigationMenu className=" flex items-center z-50 my-4">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Principal</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="font-normal antialiased">
+              Principal
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -61,7 +63,9 @@ export function Menu() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Contenido</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="font-normal antialiased">
+              Contenido
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 {menu.map((item) => (
@@ -78,7 +82,7 @@ export function Menu() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/instructorado" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} font-normal antialiased`}>
                 Instructorado
               </NavigationMenuLink>
             </Link>

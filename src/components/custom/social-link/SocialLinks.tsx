@@ -7,7 +7,7 @@ import { socials } from "@/data/socials";
 
 export function SocialLinks() {
   return (
-    <div className="flex gap-4 pr-4">
+    <div className="flex gap-4">
       {socials.map((social) => (
         <Link
           key={social.label}

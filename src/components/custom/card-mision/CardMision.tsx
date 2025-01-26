@@ -29,7 +29,7 @@ export function CardMision() {
           role="region"
           aria-labelledby="card-title"
           aria-describedby="card-description"
-          className="w-full max-w-[320px] lg:max-w-[650px] mx-auto my-20 p-6 rounded-none md:rounded-lg"
+          className="w-full max-w-[320px] lg:max-w-[650px] mx-auto my-20 rounded-none md:rounded-lg"
         >
           <section className="text-center">
             <h1
@@ -40,19 +40,19 @@ export function CardMision() {
             </h1>
             <p
               id="card-description"
-              className={`${sourceSans.className} text-base font-normal lg:text-xl text-stone-600 dark:text-stone-300`}
+              className={`${sourceSans.className} text-base font-light lg:text-xl text-stone-600 dark:text-stone-300`}
             >
               Desde 2004, implementando{" "}
-              <span className="text-stone-800 dark:text-amber-200">
-                &quot;El Método&quot; AdulMa
+              <span className="text-stone-800 dark:text-amber-200 font-normal">
+                &quot;El Método&quot; AdulMa{" "}
               </span>
               para mejorar la calidad de vida de los adultos mayores,
               potenciando su condición física y promoviendo la neuroplasticidad
               a través de una enseñanza evolutiva.
             </p>
           </section>
-          <section className="flex justify-center py-8">
-            <button className="hidden lg:block border px-4 py-2 rounded-md hover:bg-orange-100">
+          <section className="flex justify-center">
+            <button className="hidden lg:block border px-4 py-2 mt-10 rounded-md hover:bg-orange-100">
               Descubre más
             </button>
           </section>
