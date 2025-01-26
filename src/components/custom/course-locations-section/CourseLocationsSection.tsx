@@ -58,16 +58,16 @@ const courseLocations: CourseLocation[] = [
 
 export function CourseLocationsSection() {
   return (
-    <section className="pb-12 w-full">
-      <div className="container mx-auto">
+    <section className="pb-12 mx-auto w-full ">
+      <div className="container ">
         <h2
-          className={`${playfair.className} text-4xl text-center font-normal mb-8   lg:text-5xl text-zinc-600 dark:text-zinc-300`}
+          className={`${playfair.className} text-4xl text-center font-normal mb-8 lg:text-5xl text-zinc-600 dark:text-zinc-300`}
         >
           Nuestras sedes
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           {courseLocations.map((location, index) => (
-            <section key={index} className="flex flex-col p-8">
+            <section key={index} className="flex flex-col p-4">
               <div className="border border-zinc-200 dark:border-zinc-700 p-4 rounded-lg hover:shadow-md transition-all duration-100 ease-in-out">
                 <p
                   className={`${playfair.className} text-2xl font-normal text-zinc-600 dark:text-zinc-300 mb-4`}
