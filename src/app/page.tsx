@@ -1,3 +1,4 @@
+import { AdSliderSection } from "@/components/custom/ad-slider-section/AdSliderSection";
 import { CardMision } from "@/components/custom/card-mision/CardMision";
 import { CourseLocationsSection } from "@/components/custom/course-locations-section/CourseLocationsSection";
 import { Menu } from "@/components/custom/menu/menu";
@@ -11,6 +12,7 @@ export default function Home() {
         <VideoHero />
         <CardMision />
         <CourseLocationsSection />
+        <AdSliderSection />
       </main>
     </div>
   );

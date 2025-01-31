@@ -29,18 +29,18 @@ export function CardMision() {
           role="region"
           aria-labelledby="card-title"
           aria-describedby="card-description"
-          className="w-full max-w-[320px] lg:max-w-[650px] mx-auto my-20 rounded-none md:rounded-lg"
+          className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[650px] mx-auto my-10 sm:my-16 lg:my-20 rounded-none md:rounded-lg"
         >
           <section className="text-center">
             <h1
               id="card-title"
-              className={`${playfair.className} text-4xl lg:text-5xl text-zinc-600 dark:text-zinc-300 mb-10`}
+              className={`${playfair.className} text-3xl sm:text-4xl lg:text-5xl text-zinc-600 dark:text-zinc-300 mb-6 sm:mb-8 lg:mb-10`}
             >
               Nuestra Misión
             </h1>
             <p
               id="card-description"
-              className={`${sourceSans.className} text-base font-light lg:text-xl text-stone-600 dark:text-stone-300`}
+              className={`${sourceSans.className} text-sm sm:text-base lg:text-xl text-stone-600 dark:text-stone-300 px-4 sm:px-6 lg:px-8`}
             >
               Desde 2004, implementando{" "}
               <span className="text-stone-800 dark:text-amber-200 font-normal">
@@ -52,7 +52,7 @@ export function CardMision() {
             </p>
           </section>
           <section className="flex justify-center">
-            <button className="hidden lg:block border px-4 py-2 mt-10 rounded-md hover:bg-orange-100">
+            <button className="hidden lg:block border px-4 py-2 mt-6 sm:mt-8 lg:mt-10 rounded-md hover:bg-orange-100">
               Descubre más
             </button>
           </section>
