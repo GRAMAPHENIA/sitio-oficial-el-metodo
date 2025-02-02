@@ -30,5 +30,38 @@ export const ads = [
       title: "Servicios de Enfermería",
       description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
     },
+    {
+      id: 6,
+      image: "/publicidad/06.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },
+    {
+      id: 7,
+      image: "/publicidad/07.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },    {
+      id: 8,
+      image: "/publicidad/08.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },    {
+      id: 9,
+      image: "/publicidad/09.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },    {
+      id: 10,
+      image: "/publicidad/10.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },
+    {
+      id: 11,
+      image: "/publicidad/11.webp",
+      title: "Servicios de Enfermería",
+      description: "Cuidamos a quienes más quieres. ¡Llámanos hoy mismo!",
+    },
   ];
   

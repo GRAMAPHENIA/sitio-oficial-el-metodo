@@ -30,14 +30,15 @@ export function AdSliderSection() {
     return () => window.removeEventListener("resize", updateItemsPerPage);
   }, []);
 
-  const totalSlides = Math.ceil(ads.length / itemsPerPage);
+  const totalItems = ads.length;
+  const maxIndex = totalItems - itemsPerPage;
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    setCurrentIndex((prevIndex) => (prevIndex < maxIndex ? prevIndex + 1 : 0));
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : maxIndex));
   };
 
   return (
@@ -48,28 +49,26 @@ export function AdSliderSection() {
       >
         Espacio publicitario
       </h2>
-      <div className=" w-full max-w-7xl mx-auto overflow-hidden">
+      <div className="w-full max-w-7xl mx-auto overflow-hidden relative">
         <div
-          className="flex transition-transform duration-300 ease-in-out"
-          style={{
-            transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`,
-          }}
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)` }}
           aria-live="polite"
         >
           {ads.map((ad) => (
             <div
               key={ad.id}
               className="flex-shrink-0"
-              style={{ width: `${100 / itemsPerPage}%`, padding: "0 8px" }} // Añadido padding para separación
+              style={{ width: `${100 / itemsPerPage}%`, padding: "0 8px" }}
             >
               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 text-center border">
-                <div className="relative w-full h-48 sm:h-64 md:h-72 lg:h-80 mb-4">
+                <div className="relative w-full h-48 sm:h-64 md:h-72 lg:h-80 mb-4 overflow-hidden">
                   <Image
                     src={ad.image}
                     alt={ad.title}
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg border"
+                    className="rounded-lg border transition-all duration-300 ease-in-out scale-100 hover:scale-105"
                   />
                 </div>
                 <h3 className="font-semibold text-lg mb-2 text-stone-600 dark:text-stone-200">
@@ -80,17 +79,16 @@ export function AdSliderSection() {
             </div>
           ))}
         </div>
-        {/* Botones de navegación */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/5 -translate-x-7 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10"
           aria-label="Anterior"
         >
           &#10094;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/5 translate-x-7 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50  transition-all ease-in-out duration-200 shadow-md"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10"
           aria-label="Siguiente"
         >
           &#10095;

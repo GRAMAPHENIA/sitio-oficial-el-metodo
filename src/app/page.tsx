@@ -2,6 +2,7 @@ import { AdSliderSection } from "@/components/custom/ad-slider-section/AdSliderS
 import { CardMision } from "@/components/custom/card-mision/CardMision";
 import { CourseLocationsSection } from "@/components/custom/course-locations-section/CourseLocationsSection";
 import { Menu } from "@/components/custom/menu/menu";
+import ResponsiveForm from "@/components/custom/responsive-form/ResponsiveForm";
 import VideoHero from "@/components/custom/video-hero/VideoHero";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <CardMision />
         <CourseLocationsSection />
         <AdSliderSection />
+        <ResponsiveForm/>
       </main>
     </div>
   );
