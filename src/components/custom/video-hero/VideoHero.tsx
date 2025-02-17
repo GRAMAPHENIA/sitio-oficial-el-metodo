@@ -34,7 +34,7 @@ const VideoHero: React.FC = () => {
         tabIndex={-1} // Para evitar que el video sea accesible
       />
       {/* Contenido superpuesto */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center backdrop-blur-[4px] bg-black/40">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center backdrop-blur-[5px] bg-black/30">
         <h1
           id="video-hero-heading"
           className={`${lato.className} text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold`}

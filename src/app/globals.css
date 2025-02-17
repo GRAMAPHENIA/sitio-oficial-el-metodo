@@ -81,3 +81,7 @@ html.dark ::selection {
     @apply bg-background text-foreground;
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -68,7 +68,7 @@ export function AdSliderSection() {
                     alt={ad.title}
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-lg border transition-all duration-300 ease-in-out scale-100 hover:scale-105"
+                    className="rounded-lg border"
                   />
                 </div>
                 <h3 className="font-semibold text-lg mb-2 text-stone-600 dark:text-stone-200">
@@ -79,16 +79,32 @@ export function AdSliderSection() {
             </div>
           ))}
         </div>
+        <div className="flex justify-center md:hidden space-x-40 mt-4">
+          <button
+            onClick={prevSlide}
+            className="text-orange-400 px-4 py-2 rounded-full bg-orange-200 border border-orange-200/50 transition-all ease-in-out duration-200 "
+            aria-label="Anterior"
+          >
+            &#10094;
+          </button>
+          <button
+            onClick={nextSlide}
+            className="text-orange-400 px-4 py-2 rounded-full bg-orange-200 border border-orange-200/50 transition-all ease-in-out duration-200 "
+            aria-label="Siguiente"
+          >
+            &#10095;
+          </button>
+        </div>
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-200 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10 hidden md:block"
           aria-label="Anterior"
         >
           &#10094;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-100 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-orange-400 px-4 py-2 rounded-full bg-orange-200 border border-orange-200/50 transition-all ease-in-out duration-200 shadow-md z-10 hidden md:block"
           aria-label="Siguiente"
         >
           &#10095;

@@ -8,7 +8,7 @@ export default function ResponsiveForm() {
   return (
     <section
       id="contact-form"
-      className="text-center bg-white dark:bg-stone-900 shadow-md rounded-lg p-8 lg:p-12 my-12 mx-auto max-w-3xl"
+      className="text-center bg-white dark:bg-stone-900 shadow-md rounded-lg p-8 lg:p-12 lg:my-12 mx-auto max-w-3xl"
     >
       <h2 className="text-4xl lg:text-5xl font-bold text-stone-700 dark:text-stone-200 mb-6">
         Contacto
