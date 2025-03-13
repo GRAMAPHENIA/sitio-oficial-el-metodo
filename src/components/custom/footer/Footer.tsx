@@ -96,8 +96,8 @@ const Footer = () => {
         {/* Derechos de Autor */}
         <div className="mt-12 border-t border-border pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} &quot;El Metodo&quot;, AdulMa. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} &quot;El Metodo&quot;, AdulMa.
+            Todos los derechos reservados.
           </p>
         </div>
       </div>
