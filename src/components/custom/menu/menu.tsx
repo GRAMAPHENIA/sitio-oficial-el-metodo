@@ -19,7 +19,7 @@ import { SocialLinks } from "@/components/custom/social-link/SocialLinks";
 
 export function Menu() {
   return (
-    <div className="hidden md:flex justify-between items-center w-full mt-4">
+    <div className="hidden md:flex justify-between items-center mt-4 ml-36">
       {/* Menú principal */}
       <NavigationMenu className=" flex items-center z-50 my-4">
         <NavigationMenuList>

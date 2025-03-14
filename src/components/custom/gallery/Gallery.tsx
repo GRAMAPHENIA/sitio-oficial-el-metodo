@@ -9,6 +9,13 @@ import { GaleriaItem } from "@/types/galleryTypes";
 import { galleryData } from "@/data/galleryData";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function GaleriaPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,9 +33,10 @@ export default function GaleriaPage() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8 lg:px-20">
+    <div className="container mx-auto px-4 pb-20 lg:px-20">
       {/* Encabezado de la página */}
-      <h1 className="text-3xl font-bold mb-8 mt-20">Galería</h1>
+      <h1 className={`${playfair.className} text-6xl font-bold my-10
+        text-amber-800`}>Galería</h1>
 
       {/* Contenido de la galería */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

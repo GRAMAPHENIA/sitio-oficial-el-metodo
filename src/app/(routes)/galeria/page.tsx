@@ -3,7 +3,7 @@ import React from "react";
 
 const GalleryPage = () => {
   return (
-    <div>
+    <div className="px-20">
       <Gallery />
     </div>
   );

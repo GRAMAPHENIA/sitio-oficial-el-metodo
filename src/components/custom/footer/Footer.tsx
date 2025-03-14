@@ -44,7 +44,7 @@ const FooterColumn = ({
   return (
     <div className="flex flex-col mx-auto text-center sm:text-left">
       <h3
-        className={`${playfair.className} font-semibold text-amber-700 text-2xl`}
+        className={`${playfair.className} font-semibold text-amber-900 text-2xl`}
       >
         {title}
       </h3>
@@ -77,7 +77,7 @@ interface FooterProps {
 const Footer = ({ className = "" }: FooterProps) => {
   return (
     <footer
-      className={`bg-orange-300 text-foreground py-12 border-t border-border px-10 ${className}`}
+      className={`bg-orange-300 m-10 rounded-xl text-foreground py-12 border-t border-border px-10 ${className}`}
       aria-labelledby="footer-heading"
     >
       <div className="container mx-auto px-4">
@@ -87,7 +87,7 @@ const Footer = ({ className = "" }: FooterProps) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Columna 1: Logo y Descripción */}
           <div className="text-center sm:text-left">
-            <h2 className={`${playfair.className} font-semibold text-amber-700 text-2xl`}>
+            <h2 className={`${playfair.className} font-semibold text-amber-900 text-2xl`}>
             &quot;El Metodo&quot;, AdulMa.
             </h2>
             <p className="mt-4 text-sm text-muted-foreground max-w-md">
@@ -107,7 +107,7 @@ const Footer = ({ className = "" }: FooterProps) => {
 
           {/* Columna de Contacto */}
           <div className="flex flex-col mx-auto text-center sm:text-left">
-            <h3 className={`${playfair.className} font-semibold text-amber-700 text-2xl`}>
+            <h3 className={`${playfair.className} font-semibold text-amber-900 text-2xl`}>
               Contacto
             </h3>
             <address className="mt-4 not-italic text-sm text-muted-foreground">
