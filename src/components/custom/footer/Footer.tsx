@@ -45,7 +45,9 @@ const FooterColumn = ({
 
   return (
     <div className="flex flex-col mx-auto text-center sm:text-left">
-      <h3 className={`${playfair.className} font-semibold text-amber-900 text-2xl`}>
+      <h3
+        className={`${playfair.className} font-semibold text-amber-900 text-2xl`}
+      >
         {title}
       </h3>
       <nav aria-label={title}>
@@ -89,8 +91,10 @@ const Footer = ({ className = "", currentYear }: FooterProps) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Columna con el logo y la descripción */}
           <div className="text-center sm:text-left">
-            <h2 className={`${playfair.className} font-semibold text-amber-900 text-2xl`}>
-              "El Metodo", AdulMa.
+            <h2
+              className={`${playfair.className} font-semibold text-amber-900 text-2xl`}
+            >
+              &ldquo;El Metodo&rdquo;, AdulMa.
             </h2>
             <p className="mt-4 text-sm text-muted-foreground max-w-md">
               Para profesionales que quieran enseñarlo y adultos mayores que
@@ -100,18 +104,25 @@ const Footer = ({ className = "", currentYear }: FooterProps) => {
 
           {/* Columnas dinámicas de enlaces */}
           {footerColumns.map((column, index) => (
-            <FooterColumn key={index} title={column.title} links={column.links} />
+            <FooterColumn
+              key={index}
+              title={column.title}
+              links={column.links}
+            />
           ))}
 
           {/* Columna de Contacto */}
           <div className="flex flex-col mx-auto text-center sm:text-left">
-            <h3 className={`${playfair.className} font-semibold text-amber-900 text-2xl`}>
+            <h3
+              className={`${playfair.className} font-semibold text-amber-900 text-2xl`}
+            >
               Contacto
             </h3>
             <address className="mt-4 not-italic text-sm text-muted-foreground">
               {contactInfo.map((info, index) => (
                 <p key={index}>
-                  <span className="font-medium">{info.label}:</span> {info.value}
+                  <span className="font-medium">{info.label}:</span>{" "}
+                  {info.value}
                 </p>
               ))}
             </address>
@@ -148,7 +159,8 @@ const Footer = ({ className = "", currentYear }: FooterProps) => {
         {/* Derechos de Autor con el año dinámico desde prop */}
         <div className="mt-12 border-t border-zinc-700/10 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} "El Metodo", AdulMa. Todos los derechos reservados.
+            &copy; {currentYear} &ldquo;El Metodo&rdquo;, AdulMa. Todos los
+            derechos reservados.
           </p>
         </div>
       </div>
