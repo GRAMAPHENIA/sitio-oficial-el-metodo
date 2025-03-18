@@ -36,7 +36,7 @@ export default function GaleriaPage() {
     <div className="container mx-auto px-4 pb-20 lg:px-20">
       {/* Encabezado de la página */}
       <h1 className={`${playfair.className} text-6xl font-bold my-10
-        text-amber-800`}>Galería</h1>
+        text-amber-500`}>Galería</h1>
 
       {/* Contenido de la galería */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
