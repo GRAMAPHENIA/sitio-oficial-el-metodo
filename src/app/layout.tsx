@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Menu />
         {children}
-        <Footer />
+        <Footer currentYear={new Date().getFullYear()} />
       </body>
     </html>
   );
