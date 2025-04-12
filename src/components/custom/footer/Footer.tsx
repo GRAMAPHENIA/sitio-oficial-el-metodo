@@ -81,7 +81,7 @@ interface FooterProps {
 const Footer = ({ className = "", currentYear }: FooterProps) => {
   return (
     <footer
-      className={`bg-orange-300/50 m-10 rounded-xl text-foreground py-12 border border-zinc-700/10 px-10 ${className}`}
+      className={`opacity-80 p-2 bg-orange-100 border border-orange-200/50 rounded-lg m-10 px-10 py-12${className}`}
       aria-labelledby="footer-heading"
     >
       <div className="container mx-auto px-4">

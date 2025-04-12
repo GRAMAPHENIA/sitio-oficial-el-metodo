@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/custom/footer/Footer";
 import { Menu } from "@/components/custom/menu/menu";
+import ResponsiveForm from "@/components/custom/responsive-form/ResponsiveForm";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <Menu />
         {children}
+        <ResponsiveForm /> 
         <Footer currentYear={new Date().getFullYear()} />
       </body>
     </html>

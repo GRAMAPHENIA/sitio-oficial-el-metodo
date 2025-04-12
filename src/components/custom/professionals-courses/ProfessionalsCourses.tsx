@@ -27,19 +27,20 @@ const playfair = Playfair_Display({
 const sections = [
   {
     icon: LucideGraduationCap,
-    title: "Clases prácticas",
+    title: "El Instructorado",
     description:
-      "El instructorado consta de un 80% de clases prácticas. Es la unica manera de aprender",
-  },
+      "El instructorado consta de un 80% de clases prácticas. Es la única manera de aprender \"El Método\" Adulma, trabajando con la tercera y cuarta edad.",
+},
+
   {
     icon: LucideCalendarDays,
-    title: "Mes del año",
+    title: "La Clase",
     description:
       "Organiza tu formación según el calendario anual para maximizar tu aprendizaje.",
   },
   {
     icon: LucideCreditCard,
-    title: "Pagar o abonar",
+    title: "El Estudiante",
     description:
       "Opciones de pago flexibles para adaptarse a tus necesidades económicas.",
   },
@@ -51,7 +52,7 @@ const sections = [
   },
   {
     icon: LucideUsers,
-    title: "Grupo",
+    title: "Finalizando",
     description:
       "Forma parte de una comunidad de profesionales con intereses similares.",
   },
